@@ -116,7 +116,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--ckptdir", default='ckpts/r3_0.10bpp.pth')
-    parser.add_argument("--filedir", default='../../../testdata/8iVFB/longdress_vox10_1300.ply')
+    parser.add_argument("--filedir", default='../dataset/testdata/8iVFB/longdress_vox10_1300.ply')
     parser.add_argument("--scaling_factor", type=float, default=1.0, help='scaling_factor')
     parser.add_argument("--rho", type=float, default=1.0, help='the ratio of the number of output points to the number of input points')
     parser.add_argument("--res", type=int, default=1024, help='resolution')

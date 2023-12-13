@@ -118,8 +118,14 @@ class Trainer():
         start_time = time.time()
         for batch_step, (coords, feats) in enumerate(tqdm(dataloader)):
             self.optimizer.zero_grad()
+            print("coords: ",coords.shape)
+            print("feats: ",feats.shape)
+
             # data
             x = ME.SparseTensor(features=feats.float(), coordinates=coords, device=device)
+
+            print(x.shape)
+
             # if x.shape[0] > 6e5: continue
             # forward
             out_set = self.model(x, training=True)

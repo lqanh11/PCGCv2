@@ -91,7 +91,7 @@ def test(filedir, ckptdir_list, outdir, resultdir, scaling_factor=1.0, rho=1.0, 
         if idx == 0:
             all_results = results.copy(deep=True)
         else: 
-            all_results = all_results.append(results, ignore_index=True)
+            all_results = all_results._append(results, ignore_index=True)
         csv_name = os.path.join(resultdir, os.path.split(filedir)[-1].split('.')[0]+'.csv')
         all_results.to_csv(csv_name, index=False)
         print('Wrile results to: \t', csv_name)
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--filedir", default='../../../testdata/8iVFB/longdress_vox10_1300.ply')
+    parser.add_argument("--filedir", default='../dataset/testdata/8iVFB/longdress_vox10_1300.ply')
     parser.add_argument("--outdir", default='./output')
     parser.add_argument("--resultdir", default='./results')
     parser.add_argument("--scaling_factor", type=float, default=1.0, help='scaling_factor')

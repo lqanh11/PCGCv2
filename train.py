@@ -11,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument("--dataset", default='/home/ubuntu/HardDisk2/color_training_datasets/training_dataset/')
+    parser.add_argument("--dataset", default='/mnt/Data/quocanhle/Point_Cloud/dataset/training_dataset/')
     parser.add_argument("--dataset_num", type=int, default=2e4)
 
     parser.add_argument("--alpha", type=float, default=1., help="weights for distoration.")
@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument("--init_ckpt", default='')
     parser.add_argument("--lr", type=float, default=8e-4)
 
-    parser.add_argument("--batch_size", type=int, default=8)
+    parser.add_argument("--batch_size", type=int, default=1)
     parser.add_argument("--epoch", type=int, default=50)
     parser.add_argument("--check_time", type=float, default=10,  help='frequency for recording state (min).') 
     parser.add_argument("--prefix", type=str, default='tp', help="prefix of checkpoints/logger, etc.")

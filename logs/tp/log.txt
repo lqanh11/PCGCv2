@@ -1,0 +1,2055 @@
+07/17 18:40:14: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:40:14: Random initialization.
+07/17 18:43:09: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:43:09: Random initialization.
+07/17 18:43:46: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:43:46: Random initialization.
+07/17 18:44:34: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:44:34: Random initialization.
+07/17 18:44:34: ========================================
+Training Epoch: 0
+07/17 18:44:34: alpha:1.0	beta:1.0
+07/17 18:44:34: LR:[0.0008, 0.0008, 0.0008]
+07/17 18:44:34: Training Files length:2250
+07/17 18:57:38: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:57:38: Random initialization.
+07/17 18:57:38: ========================================
+Training Epoch: 0
+07/17 18:57:38: alpha:1.0	beta:1.0
+07/17 18:57:38: LR:[0.0008, 0.0008, 0.0008]
+07/17 18:57:38: Training Files length:2250
+07/17 18:57:59: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:57:59: Random initialization.
+07/17 18:57:59: ========================================
+Training Epoch: 0
+07/17 18:57:59: alpha:1.0	beta:1.0
+07/17 18:57:59: LR:[0.0008, 0.0008, 0.0008]
+07/17 18:57:59: Training Files length:4500
+07/17 18:58:49: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:58:49: Random initialization.
+07/17 18:58:49: ========================================
+Training Epoch: 0
+07/17 18:58:49: alpha:1.0	beta:1.0
+07/17 18:58:49: LR:[0.0008, 0.0008, 0.0008]
+07/17 18:58:49: Training Files length:4500
+07/17 18:59:36: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/17 18:59:36: Random initialization.
+07/17 18:59:36: ========================================
+Training Epoch: 0
+07/17 18:59:36: alpha:1.0	beta:1.0
+07/17 18:59:36: LR:[0.0008, 0.0008, 0.0008]
+07/17 18:59:36: Training Files length:18000
+07/18 11:23:56: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/18 11:23:56: Random initialization.
+07/18 11:23:56: ========================================
+Training Epoch: 0
+07/18 11:23:56: alpha:1.0	beta:1.0
+07/18 11:23:56: LR:[0.0008, 0.0008, 0.0008]
+07/18 11:23:56: Training Files length:18000
+07/18 11:25:01: PCCModel(
+  (encoder): Encoder(
+    (conv0): MinkowskiConvolution(in=1, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down0): MinkowskiConvolution(in=16, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down1): MinkowskiConvolution(in=32, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (down2): MinkowskiConvolution(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv3): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+  )
+  (decoder): Decoder(
+    (up0): MinkowskiGenerativeConvolutionTranspose(in=8, out=64, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv0): MinkowskiConvolution(in=64, out=64, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block0): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=64, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=16, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=64, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=16, out=32, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv0_cls): MinkowskiConvolution(in=64, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up1): MinkowskiGenerativeConvolutionTranspose(in=64, out=32, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv1): MinkowskiConvolution(in=32, out=32, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block1): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=32, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=8, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=32, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=8, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=8, out=16, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv1_cls): MinkowskiConvolution(in=32, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (up2): MinkowskiGenerativeConvolutionTranspose(in=32, out=16, kernel_size=[2, 2, 2], stride=[2, 2, 2], dilation=[1, 1, 1])
+    (conv2): MinkowskiConvolution(in=16, out=16, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (block2): Sequential(
+      (0): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (1): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+      (2): InceptionResNet(
+        (conv0_0): MinkowskiConvolution(in=16, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv0_1): MinkowskiConvolution(in=4, out=8, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_0): MinkowskiConvolution(in=16, out=4, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_1): MinkowskiConvolution(in=4, out=4, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (conv1_2): MinkowskiConvolution(in=4, out=8, kernel_size=[1, 1, 1], stride=[1, 1, 1], dilation=[1, 1, 1])
+        (relu): MinkowskiReLU()
+      )
+    )
+    (conv2_cls): MinkowskiConvolution(in=16, out=1, kernel_size=[3, 3, 3], stride=[1, 1, 1], dilation=[1, 1, 1])
+    (relu): MinkowskiReLU()
+    (pruning): MinkowskiPruning()
+  )
+  (entropy_bottleneck): EntropyBottleneck(
+    (_matrices): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x3 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x3 (GPU 0)]
+    )
+    (_biases): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+    (_factors): ParameterList(
+        (0): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (1): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (2): Parameter containing: [torch.cuda.FloatTensor of size 8x3x1 (GPU 0)]
+        (3): Parameter containing: [torch.cuda.FloatTensor of size 8x1x1 (GPU 0)]
+    )
+  )
+)
+07/18 11:25:01: Random initialization.
+07/18 11:25:01: ========================================
+Training Epoch: 0
+07/18 11:25:01: alpha:1.0	beta:1.0
+07/18 11:25:01: LR:[0.0008, 0.0008, 0.0008]
+07/18 11:25:01: Training Files length:18000

@@ -107,8 +107,8 @@ def make_data_loader(dataset, batch_size=1, shuffle=True, num_workers=1, repeat=
 
 if __name__ == "__main__":
     # filedirs = sorted(glob.glob('/home/ubuntu/HardDisk2/color_training_datasets/training_dataset/'+'*.h5'))
-    filedirs = sorted(glob.glob('/home/ubuntu/HardDisk1/point_cloud_testing_datasets/8i_voxeilzaed_full_bodies/8i/longdress/Ply/'+'*.ply'))
-    test_dataset = PCDataset(filedirs[:10])
+    filedirs = sorted(glob.glob('/mnt/Data/quocanhle/Point_Cloud/dataset/testdata/8iVFB/'+'*.ply'))
+    test_dataset = PCDataset(filedirs[:3])
     test_dataloader = make_data_loader(dataset=test_dataset, batch_size=2, shuffle=True, num_workers=1, repeat=False,
                                         collate_fn=collate_pointcloud_fn)
     for idx, (coords, feats) in enumerate(tqdm(test_dataloader)):
